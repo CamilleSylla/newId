@@ -14,7 +14,7 @@ export default function Presentation () {
                 scrollTrigger:{
                     trigger: section,
                     markers: true,
-                    start: "center center",
+                    start: "top top",
                     end: () => "+=" + section.offsetWidth,
                     scrub: true,
                     pin: true,
