@@ -6,23 +6,33 @@ import Explain from "./Explain/Explain";
 import HeroBanner from "./HeroBanner/HeroBanner";
 import Presentation from "./Presentation/Presentation";
 
+
 export default function Home() {
-  // useEffect(() => {
-  //   gsap.registerPlugin(ScrollTrigger);
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    
+    
+    // ScrollTrigger.scrollerProxy("body", {
+    //   scrollTop(value) {
+    //     if(arguments.length) {
+    //       bodyScrollbar.scrollTop = value
+    //     }
+    //     return bodyScrollbar.scrollTop
+    //   }
+    // })
+    // gsap.utils.toArray(".panel").forEach((panel, i) => {
+    //   ScrollTrigger.create({
+    //     trigger: panel,
+    //     start: "top top",
+    //     pin: true,
+    //     pinSpacing: false,
+    //   });
+    // });
 
-  //   gsap.utils.toArray(".panel").forEach((panel, i) => {
-  //     ScrollTrigger.create({
-  //       trigger: panel,
-  //       start: "top top",
-  //       pin: true,
-  //       pinSpacing: false,
-  //     });
-  //   });
-
-  //   ScrollTrigger.create({
-  //     snap: 1 / 1, // snap whole page to the closest section!
-  //   });
-  // });
+    // ScrollTrigger.create({
+    //   snap: 1 / 1, // snap whole page to the closest section!
+    // });
+  });
   return (
     <div id="home">
       <HeroBanner />

@@ -5,6 +5,7 @@ import "../../Styles/Home/Explain/Explain.scss";
 import Directions from "../../../assets/icons/Directions.svg"
 import UX from "../../../assets/icons/UX.svg"
 import Management from "../../../assets/icons/Management.svg"
+import { Power2 } from "gsap/all";
 
 export default function Explain() {
   useEffect(() => {
@@ -12,6 +13,7 @@ export default function Explain() {
 
     gsap.to("#background_circle", {
       scale: 85,
+      rotate: 290,
       background: "linear-gradient(#a5167e, #272b53)",
       scrollTrigger: {
         trigger: "#explain",
@@ -32,7 +34,9 @@ export default function Explain() {
     gsap.from("#explain_content .columns", {
       yPercent: 50,
       opacity: 0,
+      
       scrollTrigger: {
+        ease: Power2.easeOut,
         trigger: "#explain",
         start: "top top",
         scrub: true,
