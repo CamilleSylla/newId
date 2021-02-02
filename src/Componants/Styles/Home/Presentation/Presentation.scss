@@ -2,9 +2,8 @@
     width: 100vw;
     height: auto;
     display: flex;
-    background-color: #272b53;
     #spinning_circle_container {
-        width: 30vw;
+        width: 20vw;
         height: 100vh;
         display: flex;
         align-items: center;
@@ -15,18 +14,27 @@
         }
     }
     #domaines{
-        width: 70vw;
+        width: 80vw;
         height: auto;
-        background-color: violet;
         position: relative;
         article {
             position: absolute;
             width: 100%;
             height: 100%;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-
+            p {
+                width: 40%;
+                font-size: 1.2vw;
+                text-align: left;
+                font-weight: 500;
+                color: #a5167e;
+                span {
+                    font-weight: 800;
+                  }
+            }
         }
     }
 }

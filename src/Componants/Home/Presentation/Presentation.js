@@ -13,7 +13,6 @@ export default function Presentation () {
             let tl = gsap.timeline({
                 scrollTrigger:{
                     trigger: section,
-                    markers: true,
                     start: "top top",
                     end: () => "+=" + section.offsetWidth,
                     scrub: true,
@@ -22,8 +21,30 @@ export default function Presentation () {
                 },
                 default: {ease: "none"}
             })
+            
             tl.fromTo(section.querySelector(".developpement"), { xPercent: 100, x: 0}, {xPercent: 0})
-            tl.fromTo(section.querySelector(".third"), { xPercent: 100, x: 0}, {xPercent: 0})
+        })
+        
+        gsap.to('.partone', {
+            yPercent: 100,
+            opacity: 0,
+            scrollTrigger: {
+                trigger: '.creation',
+                start: "100px top",
+                end: "350px top",
+                scrub: true,
+                markers: true
+            }
+        })
+        gsap.from('.parttwo', {
+            opacity: 0,
+            scrollTrigger: {
+                trigger: '.creation',
+                start: "350px top",
+                end: "600px top",
+                scrub: true,
+                markers: true
+            }
         })
           
       })
@@ -33,9 +54,8 @@ export default function Presentation () {
                <img id="spinning_circle" src={Circle} alt="IconicDev Categrorie Circle"/>
            </article>
            <section id="domaines">
-                    <article className="creation" style={{backgroundColor: 'pink'}}><p>A</p></article>
-                    <article className="developpement" style={{backgroundColor: 'grey'}}><p>A</p></article>
-                    <article className="third" style={{backgroundColor: 'green'}}><p>A</p></article>
+                    <article className="creation" ><h1 className="subtitle partone">Design &<br/> <span>Developpement</span></h1><p className="partone">Nous vous créeons <span>un site internet qui vous correspond</span>. Que vous soyez une PME, une association, une institution ou autres, <span>IconicDev</span> saura faire ressortir les <span>atouts que vous voulez mettre en avant</span>. </p></article>
+                    <article className="developpement"><h1 className="subtitle parttwo">Une solution <br/> <span>pour tout projet</span></h1><p className="parttwo">Chaque projet est unique et nécessite des solutions adaptées à son empleure. Chez IconicDev, on vous conseillera et ensemble donneront naissance à votre projet web.</p></article>
            </section>
         </section>
     )

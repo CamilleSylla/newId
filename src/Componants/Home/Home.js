@@ -26,7 +26,7 @@ export default function Home() {
     <div id="home">
       <HeroBanner />
       <Presentation />
-      <div className="panel" style={{width: "100vw", height: "100vh", backgroundColor: "red"}}>
+      <div className="pane" style={{width: "100vw", height: "100vh", backgroundColor: "red"}}>
 
       </div>
     </div>

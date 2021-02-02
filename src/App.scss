@@ -8,6 +8,7 @@
 
 .App {
   text-align: center;
+  background-color: #272b53;
 }
 .main_title {
   line-height: 90%;
@@ -59,4 +60,16 @@
   }
 }
 
-
+.subtitle {
+  font-size: 3vw;
+  text-align: left;
+  width: 40%;
+  margin-bottom: 30px;
+  color: #a5167e;
+  font-weight: 300;
+  span {
+    -webkit-text-stroke: 2px #a5167e;
+    color: transparent;
+    font-weight: 500;
+  }
+}
