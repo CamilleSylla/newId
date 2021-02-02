@@ -2,6 +2,7 @@ import { ScrollTrigger } from "gsap/all";
 import gsap from "gsap/gsap-core";
 import React, { useEffect } from "react";
 import "../Styles/Home/Home.scss";
+import Explain from "./Explain/Explain";
 import HeroBanner from "./HeroBanner/HeroBanner";
 import Presentation from "./Presentation/Presentation";
 
@@ -26,6 +27,7 @@ export default function Home() {
     <div id="home">
       <HeroBanner />
       <Presentation />
+      <Explain/>
       <div className="pane" style={{width: "100vw", height: "100vh", backgroundColor: "red"}}>
 
       </div>
