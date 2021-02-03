@@ -20,7 +20,7 @@ export default function HomeService() {
         trigger: "#homeService",
         start: "top top",
         end: "+=500",
-        scrub: true,
+        scrub: 0.8,
       },
     });
     gsap.from("#sideImg", {
@@ -30,7 +30,7 @@ export default function HomeService() {
         trigger: "#homeService",
         start: "top top",
         end: "+=750",
-        scrub: true,
+        scrub: 0.8,
       },
     });
     gsap.from("#gris", {

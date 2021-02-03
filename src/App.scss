@@ -132,3 +132,17 @@
   justify-content: space-evenly;
   align-items: center;
 }
+
+.round_button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  .circleGrey {
+    width: 150px;
+  }
+  .neonLogo {
+    width: 50px;
+    position: absolute;
+  }
+}

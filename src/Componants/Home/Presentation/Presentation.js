@@ -15,7 +15,7 @@ export default function Presentation() {
           trigger: section,
           start: "top top",
           end: () => "+=" + section.offsetWidth,
-          scrub: true,
+          scrub: 0.5,
           pin: true,
           anticipatePin: 1,
         },
@@ -36,7 +36,7 @@ export default function Presentation() {
         trigger: ".creation",
         start: "100px top",
         end: "350px top",
-        scrub: true,
+        scrub: 0.5,
       },
     });
     gsap.from(".parttwo", {
@@ -45,7 +45,7 @@ export default function Presentation() {
         trigger: ".creation",
         start: "350px top",
         end: "600px top",
-        scrub: true,
+        scrub: 0.5,
       },
     });
   });

@@ -38,7 +38,7 @@ export default function Explain() {
         trigger: "#explain",
         start: "top top",
         end: "+=1250 bottom",
-        scrub: true
+        scrub: 0.5
       },
     });
     gsap.from("#explain", {
@@ -48,7 +48,7 @@ export default function Explain() {
         start: "top top",
         end: "+=1500 bottom",
         pin: true,
-        scrub: true
+        scrub: 0.5
       },
     });
     
