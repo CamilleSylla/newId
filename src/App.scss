@@ -79,12 +79,12 @@
   align-items: center;
   font-size: 1.2vw;
   font-weight: 500;
-  
+
   a {
     color: #a5167e;
     text-decoration: none;
     padding-bottom: 10px;
-    border-bottom: 2px dotted #a5167e ;
+    border-bottom: 2px dotted #a5167e;
   }
   img {
     margin-left: 10px;
@@ -97,7 +97,7 @@
 #background_circle {
   width: 20px;
   height: 20px;
-  background:#272b53;
+  background: #272b53;
   border-radius: 10px;
   transform: scale(0);
   position: absolute;
@@ -110,14 +110,14 @@
   height: 20%;
   color: white;
   img {
-    width: 12%;
+    width: 60px;
   }
   .articles {
     width: 80%;
     text-align: left;
-    
+
     -webkit-backdrop-filter: blur(10px);
-      backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
     h1 {
       font-size: 2vw;
     }
@@ -125,10 +125,10 @@
 }
 
 .columns {
-width: 40%;
-height: 100vh;
-display: flex;
-flex-direction: column;
-justify-content: space-evenly;
-align-items: center;
+  width: 40%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }

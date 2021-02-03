@@ -19,7 +19,6 @@ export default function Explain() {
         trigger: "#explain",
         start: "top top",
         end: "bottom top",
-        scrub: true,
       },
     });
     gsap.from("#explain_content .subtitle", {
@@ -28,7 +27,6 @@ export default function Explain() {
       scrollTrigger: {
         trigger: "#explain",
         start: "top top",
-        scrub: true,
       },
     });
     gsap.from("#explain_content .columns", {
@@ -39,9 +37,18 @@ export default function Explain() {
         ease: Power2.easeOut,
         trigger: "#explain",
         start: "top top",
-        scrub: true,
-        end: "+=2000 bottom",
+        end: "+=1250 bottom",
+        scrub: true
+      },
+    });
+    gsap.from("#explain", {
+      scrollTrigger: {
+        ease: Power2.easeOut,
+        trigger: "#explain",
+        start: "top top",
+        end: "+=1500 bottom",
         pin: true,
+        scrub: true
       },
     });
     
