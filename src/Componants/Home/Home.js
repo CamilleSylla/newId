@@ -5,6 +5,7 @@ import "../Styles/Home/Home.scss";
 import Explain from "./Explain/Explain";
 import HeroBanner from "./HeroBanner/HeroBanner";
 import Presentation from "./Presentation/Presentation";
+import Projects from "./Projects/Projects";
 import HomeService from "./Services/HomeServices";
 
 
@@ -40,6 +41,7 @@ export default function Home() {
       <Presentation />
       <Explain/>
       <HomeService/>
+      <Projects/>
       <div className="pane" style={{width: "100vw", height: "100vh", backgroundColor: "red"}}>
 
       </div>

@@ -8,6 +8,7 @@ import Lb from "../../../assets/icons/Lbleu.svg";
 import Lg from "../../../assets/icons/Lgrey.svg";
 import Lp from "../../../assets/icons/Lpurple.svg";
 import IDIcon from "../../../assets/icons/IDIcon.svg";
+import ID from "../../../assets/Logos/IDSign.svg"
 
 export default function HomeService() {
   useEffect(() => {
@@ -33,7 +34,7 @@ export default function HomeService() {
       },
     });
     gsap.from("#gris", {
-        yPercent: -100,
+        yPercent: 100,
       opacity: 0,
       scrollTrigger: {
         trigger: "#homeService",
@@ -41,7 +42,7 @@ export default function HomeService() {
       },
     });
     gsap.from("#violet", {
-    yPercent: -100,
+    yPercent: 0,
       opacity: 0,
       scrollTrigger: {
         trigger: "#homeService",
@@ -57,7 +58,7 @@ export default function HomeService() {
       },
     });
     gsap.from("#idIcon", {
-      //   xPercent: 100,
+        yPercent: 100,
       opacity: 0,
       scrollTrigger: {
         trigger: "#homeService",
@@ -71,7 +72,10 @@ export default function HomeService() {
   return (
     <section id="homeService">
       <article id="homeService_left" className="contain">
-        <div className="offres">
+      <img className="logo" src={ID} alt="IconicDev"/>  
+      <p style={{width: "70%", textAlign: "center"}} className="subtitle">Choisissez  la formule qui <span>vous correspond</span></p>
+      <div style={{display: "flex", width: "100%", justifyContent: "space-evenly"}}>
+      <div className="offres">
           <img src={Achat} alt="Decouvrer nos offres" />
           <article className="homeService_content">
             <h1 className="subtitle">Je veux acheter mon site internet</h1>
@@ -85,6 +89,8 @@ export default function HomeService() {
             <p>Lorem Ipsum</p>
           </article>
         </div>
+      </div>
+        
       </article>
       <article id="homeService_right" className="contain">
         <img id="idIcon" src={IDIcon} alt="Decouvrer nos offres" />
