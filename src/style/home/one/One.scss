@@ -1,0 +1,24 @@
+#home_one {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .one_title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 4px solid #a5167e;
+    h1 {
+      white-space: nowrap;
+      overflow-x: hidden;
+      text-transform: uppercase;
+    }
+  }
+}

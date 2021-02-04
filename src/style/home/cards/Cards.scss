@@ -1,0 +1,52 @@
+#home_cards{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .cards_title {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 4px solid #a5167e;
+        h1 {
+          white-space: nowrap;
+          overflow-x: hidden;
+          text-transform: uppercase;
+        }
+      }
+      .card_wrapper {
+          width: 90%;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          .card {
+              display: flex;
+              flex-direction: column;
+              justify-content: space-evenly;
+              background-image: url(../../../assets/img/Cadre.svg);
+              width: 376px;
+              height: 428px;
+              .icon {
+                  width: 80px;
+                  margin-left: 20px;
+              }
+              h1 {
+                  font-size: 36px;
+                  font-weight: bold;
+                  color: #a5167e;
+                  margin-left: 20px;
+              }
+              p {
+                  font-size: 18px;
+                  color: #a5167e;
+                  margin-left: 20px;
+              }
+          }
+      }
+}
