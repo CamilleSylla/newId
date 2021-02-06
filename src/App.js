@@ -1,4 +1,5 @@
 import './App.scss';
+import Concept from './Componants/Home/Concept/Concept';
 import Home from './Componants/Home/Home';
 function App() {
 

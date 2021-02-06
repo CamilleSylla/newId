@@ -21,16 +21,28 @@ export default function Banner() {
             <img src={Icon} alt="Iconicdev"/>
             <h1>Sur Mesure</h1>
             <p>Vos valeurs sur un ecran</p>
+            <div className="link">
+                <p>En savoir plus</p>
+                <img src={Arrow} alt="fleche IconicDev"/>
+            </div>
         </article>
         <article className="Banner_cards">
             <img src={Icon} alt="Iconicdev"/>
             <h1>Sur Mesure</h1>
             <p>Vos valeurs sur un ecran</p>
+            <div className="link">
+                <p>En savoir plus</p>
+                <img src={Arrow} alt="fleche IconicDev"/>
+            </div>
         </article>
         <article className="Banner_cards">
             <img src={Icon} alt="Iconicdev"/>
             <h1>Sur-Mesure</h1>
             <p>Vos valeurs sur un ecran</p>
+            <div className="link">
+                <p>En savoir plus</p>
+                <img src={Arrow} alt="fleche IconicDev"/>
+            </div>
         </article>
         <article className="Banner_cards">
             <img src={Icon} alt="Iconicdev"/>
