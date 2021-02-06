@@ -14,12 +14,16 @@
 }
 .container {
   border: 5px solid #A5167E;
-  box-shadow:25px 30px 0px #21254F;
+  box-shadow:25px 30px 10px #21254F;
+}
+.inner_container {
+  border: 3px solid #A5167E;
+  box-shadow:15px 20px 10px #21254F;
 }
 
 .page_title {
   font-size: 8vh;
-  text-shadow:15px 20px 4px  rgba(#21254F, 0.5);
+  text-shadow:15px 20px 5px  rgba(#21254F, 0.5);
 }
 
 .btn_pink {

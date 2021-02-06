@@ -7,11 +7,11 @@ export default function Cards() {
   return (
     <section className="layer">
       <article className="container" id="Cards">
-        <div className="moving_title container">
+        <div className="moving_title inner_container">
           <h1 className="moving_title_txt">Pourquoi le sur-mesure ?</h1>
         </div>
         <div className="cards_wrapper">
-          <section className="cards_item container">
+          <section className="cards_item inner_container">
             <img src={Icon} alt="qqch" />
             <h1>Vous differencier de la concurence</h1>
             <p>
@@ -23,7 +23,7 @@ export default function Cards() {
               <img src={Arrow} alt="fleche IconicDev" />
             </div>
           </section>
-          <section className="cards_item container">
+          <section className="cards_item inner_container">
             <img src={Icon} alt="qqch" />
             <h1>Vous differencier de la concurence</h1>
             <p>
@@ -35,7 +35,7 @@ export default function Cards() {
               <img src={Arrow} alt="fleche IconicDev" />
             </div>
           </section>
-          <section className="cards_item container">
+          <section className="cards_item inner_container">
             <img src={Icon} alt="qqch" />
             <h1>Vous differencier de la concurence</h1>
             <p>
